@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mural de Recados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="mural-container">
+    <header>
+      <h1>Mural de Recados</h1>
+    </header>
+
+    <section class="recados-lista">
+      <div class="recado">
+        <p> 📅 Prova de programação: 25/05</p>
+      </div>
+      <div class="recado">
+        <p>💻 Entregar o projeto HTML até sexta-feira</p>
+      </div>
+      <div class="recado">
+        <p> 📢 Aula extra sábado às 9h</p>
+      </div>
+    </section>
+
+    <section class="formulario-recado">
+      <form id="form-recado">
+        <label for="nome">Seu nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required /> 
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." rows="4" required></textarea>
+
+        <button type="submit">Enviar recado</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
