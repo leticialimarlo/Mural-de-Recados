@@ -6,6 +6,7 @@
   <title>Mural de Recados</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <main class="mural-container">
     <header>
@@ -13,28 +14,42 @@
     </header>
 
     <section class="recados-lista">
-      <div class="recado">
-        <p> 📅 Prova de programação: 25/05</p>
-      </div>
-      <div class="recado">
-        <p>💻 Entregar o projeto HTML até sexta-feira</p>
-      </div>
-      <div class="recado">
-        <p> 📢 Aula extra sábado às 9h</p>
-      </div>
-    </section>
+  <div class="recado">
+    <div class="recado-conteudo">
+      <p>📅 Prova de programação: 25/05</p>
+      <button class="btn-excluir">X</button>
+    </div>
+  </div>
+  <div class="recado">
+    <div class="recado-conteudo">
+      <p>💻 Entregar o projeto HTML até sexta-feira</p>
+      <button class="btn-excluir">X</button>
+    </div>
+  </div>
+  <div class="recado">
+    <div class="recado-conteudo">
+      <p>📢 Aula extra sábado às 9h</p>
+      <button class="btn-excluir">X</button>
+    </div>
+  </div>
+</section>
 
     <section class="formulario-recado">
-      <form id="form-recado">
-        <label for="nome">Seu nome: </label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required /> 
+  <button id="mostrar-formulario" class="btn-adicionar">➕ Novo Recado</button>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." rows="4" required></textarea>
 
-        <button type="submit">Enviar recado</button>
-      </form>
-    </section>
+  <form id="form-recado" class="escondido">
+    <label for="nome">Seu nome: </label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required /> 
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." rows="4" required></textarea>
+
+    <button type="submit">Enviar recado</button>
+  </form>
+</section>
   </main>
+  
+  <script src="script.js"></script>
 </body>
 </html>
